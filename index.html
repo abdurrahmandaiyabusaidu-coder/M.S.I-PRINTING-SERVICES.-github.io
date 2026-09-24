@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MSI PRINTS</title>
+
+    <link rel="icon" type="image" href="MSI LOGO.jpg">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- SCREEN READER / ACCESSIBILITY -->
+<div class="accessibility-panel" id="accessibilityPanel">
+    <button id="readPageBtn" type="button">
+        <i class="fa-solid fa-volume-high"></i>
+        Read Page
+    </button>
+
+    <button id="stopReadingBtn" type="button">
+        <i class="fa-solid fa-stop"></i>
+        Stop
+    </button>
+</div>
+
+<button
+    id="screenReaderBtn"
+    class="screen-reader-btn"
+    type="button"
+    aria-label="Open screen reader"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-universal-access"></i>
+</button>
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="header">
+
+    <a href="#home" class="logo">
+        M.S.I <span>PRINTING SERICES</span>
+    </a>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#ceo" class="nav-link">CEO</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+
+        <button
+            id="themeBtn"
+            class="icon-btn"
+            type="button"
+            aria-label="Toggle theme"
+        >
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button
+            id="menuBtn"
+            class="icon-btn menu-btn"
+            type="button"
+            aria-label="Open menu"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="small-title">
+            WELCOME TO M.S.I PRINTING SERICES
+
+        </span>
+
+        <h1>
+            Find Your <span>Style.</span>
+        </h1>
+
+        <p>
+            "Your Brand, Printed with Pride." → feels premium + trustworthy.
+                "We Handle the Print, You Handle the Applause."
+            These products are samples. More products are available on WhatsApp.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="btn primary-btn">
+                View Products
+            </a>
+
+            <a
+                href="https://wa.me/2348127902939"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn secondary-btn"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="hero-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+
+        <h3><table>Transfrom Your Ideas Into Reality</table></h3>
+
+        <p>Standard In Printing Services</p>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CATEGORIES
+================================================== -->
+
+<section class="categories">
+
+    <p>SAMPLES DISPLAY</p>
+
+
+</section>
+
+
+<!-- ==================================================
+     PRODUCTS
+================================================== -->
+
+<section id="products" class="section">
+
+    <div class="section-heading">
+
+        <span>01 COLLECTION</span>
+
+        <h2>
+            Our <strong>Products</strong>
+        </h2>
+
+        <p>
+            These are sample products.
+            More products are available on WhatsApp.
+        </p>
+
+    </div>
+
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search products..."
+            autocomplete="off"
+        >
+
+    </div>
+
+
+    <div id="productsGrid" class="products-grid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <article class="product-card" data-category="bags">
+
+            <div class="product-image">
+                <img
+                    src="1e0d8c9f79b63bb0ce0e27906b778c95.jpg"
+                    width="400"
+                    height="300"
+                    alt="A2 Paper Bag"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">PAPER Bag </span>
+                <h3 class="product-name">Paper Bag</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+
+        <article class="product-card" data-category="Boxes">
+
+            <div class="product-image">
+                <img
+                    src="c9ac2f92fa58448365e5224a5b6959ea.jpg"
+                    width="400"
+                    height="300"
+                    alt="Gifts Boxes "
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Boxes</span>
+                <h3 class="product-name">Gifts Boxes</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+
+        <article class="product-card" data-category="Cards">
+
+            <div class="product-image">
+                <img
+                    src="1c5156e09efa6a0a63cc11485626bc3c.jpg"
+                    width="400"
+                    height="300"
+                    alt="Business Cards"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Complimentry Cards</span>
+                <h3 class="product-name">Business Cards</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+
+        <article class="product-card" data-category="bags">
+
+            <div class="product-image">
+                <img
+                    src="145cc780bc2d41b4b4776a98ea5f7b31.jpg"
+                    width="400"
+                    height="300"
+                    alt="Customized T-Shirts"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">T-SHIRTS</span>
+                <h3 class="product-name">Fashion Shirts</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 5 -->
+
+        <article class="product-card" data-category="shoes">
+
+            <div class="product-image">
+                <img
+                    src="dd0bb34434a50c07628b7d84e0d1e09f.jpg"
+                    width="400"
+                    height="300"
+                    alt="Border Frames"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Frames</span>
+                <h3 class="product-name">Border Frames</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 6 -->
+
+        <article class="product-card" data-category="bags">
+
+            <div class="product-image">
+                <img
+                    src="10f68d786085417db370a8773847a534.jpg"
+                    width="400"
+                    height="300"
+                    alt="Pouches"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Pouch</span>
+                <h3 class="product-name">Pouch's</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 7 -->
+
+        <article class="product-card" data-category="bags">
+
+            <div class="product-image">
+                <img
+                    src="340dc31ea0aa67f1914f092aad3fcbd9.jpg"
+                    width="400"
+                    height="300"
+                    alt="P-Cap"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">P-caps</span>
+                <h3 class="product-name">Trucker Cap</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 8 -->
+
+        <article class="product-card" data-category="shoes">
+
+            <div class="product-image">
+                <img
+                    src="Screenshot_20250414-085606.jpg"
+                    width="400"
+                    height="300"
+                    alt="Birthday Packages"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Packages</span>
+                <h3 class="product-name">Birthday Packages</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 9 -->
+
+        <article class="product-card" data-category="shoes">
+
+            <div class="product-image">
+                <img
+                    src="IMG_20250705_103837.jpg"
+                    width="400"
+                    height="300"
+                    alt="Birthday Box"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Gift Boxes </span>
+                <h3 class="product-name">Birthday Box</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 10 -->
+
+        <article class="product-card" data-category="bags">
+            <span class="new-badge">NEW ✨</span>
+
+            <div class="product-image">
+                <img
+                    src="a4095b43269e5a6d2f31372b340f297c.jpg"
+                    width="400"
+                    height="300"
+                    alt="Jotter"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Jotter</span>
+                <h3 class="product-name">Memo</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 11 -->
+
+        <article class="product-card" data-category="bags">
+            <span class="new-badge">NEW ✨</span>
+
+            <div class="product-image">
+                <img
+                    src="b6428c2ba64dedff63579d3d0a14d491.jpg"
+                    width="400"
+                    height="300"
+                    alt="Wooden Awards"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Awards</span>
+                <h3 class="product-name">Wooden Awards</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 12 -->
+
+        <article class="product-card" data-category="shoes">
+
+            <div class="product-image">
+                <img
+                    src="819f04797baede488c06dab8bc857bc0.jpg"
+                    width="400"
+                    height="300"
+                    alt="Laptop Sticker's"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Sticker's</span>
+                <h3 class="product-name">Laptop Sticker</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 13 -->
+
+        <article class="product-card" data-category="shoes">
+            <span class="new-badge">NEW ✨</span>
+
+            <div class="product-image">
+                <img
+                    src="1e3e0d1ec76346548fef8e8f7066fd21.jpg"
+                    width="400"
+                    height="300"
+                    alt="Nylon Prints"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Nylon's</span>
+                <h3 class="product-name">A4 Size Nylon (100pieces)</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 15 -->
+
+        <article class="product-card" data-category="shoes">
+
+            <div class="product-image">
+                <img
+                    src="7f2cdcf00b3c4366b77c6e629b766852.jpg"
+                    width="400"
+                    height="300"
+                    alt="Exercise books"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Books</span>
+                <h3 class="product-name">Exercise Books</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 16 -->
+
+        <article class="product-card" data-category="bags">
+            <span class="new-badge">NEW ✨</span>
+
+            <div class="product-image">
+                <img
+                    src="77dc9b24f130e3cf420ef8d558f4e6bc.jpg"
+                    width="400"
+                    height="300"
+                    alt="T-Shirts"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">T-Shirts</span>
+                <h3 class="product-name">Embroidery T-shirts</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 17 -->
+
+        <article class="product-card" data-category="shoes">
+
+            <div class="product-image">
+                <img
+                    src="9718d8de38b4417c82effe251bb0dfa5.jpg"
+                    width="400"
+                    height="300"
+                    alt="Frameless"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Frames</span>
+                <h3 class="product-name">Frameless</h3>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 20 -->
+
+        <article class="product-card" data-category="shoes">
+             <span class="new-badge">NEW ✨</span>
+
+            <div class="product-image">
+                <img
+                    src="c7844a7c7866407a8ca344533bc03bee.jpg"
+                    width="400"
+                    height="300"
+                    alt="Classic Shoe"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Key Holder's</span>
+                <h3 class="product-name">Key Holder</h3>
+            </div>
+
+        </article>
+                            
+
+        <!-- PRODUCT 21 -->
+
+        <article class="product-card" data-category="shoes">
+
+            <div class="product-image">
+                <span class="new-badge">NEW ✨</span>
+                <img
+                    src="19bca2639e2ef6fbf80d56f765122bbc.jpg"
+                    width="400"
+                    height="300"
+                    alt="Throw Pillow"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Throw Pillow</span>
+                <h3 class="product-name">Royal Throw Pillow</h3>
+                
+            </div>
+
+        </article>
+
+
+        <!-- WHATSAPP P-Caps -->
+
+        <article class="product-card" data-category="P-Caps">
+
+            <div class="product-image">
+                <img
+                    src="f159718e281771e7397d24fcba4b8558.png"
+                    width="400"
+                    height="300"
+                    alt="P-caps"
+                >
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">P-Caps</span>
+                <h3 class="product-name">Truckers P-cap</h3>     
+                <div class="product-rating" aria-label="5 out of 5 stars">
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+        </div>
+            </div>
+
+        </article>
+
+
+        <!-- WHATSAPP LOGO -->
+
+        <article class="product-card" data-category="logo">
+
+            <div class="product-image">
+                <img
+                    src="Screenshot_20250414-085750.jpg"
+                    width="400"
+                    height="300"
+                    alt="Logo"
+                >
+                
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">LOGO</span>
+                <h3 class="product-name">Office Logo</h3>
+                <div class="product-info">
+    
+       <div class="product-rating" aria-label="5 out of 5 stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+        </div>
+  </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     WHATSAPP
+================================================== -->
+
+<section id="whatsapp" class="whatsapp-section">
+
+    <div class="whatsapp-icon">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <div class="whatsapp-content">
+
+        <span>MORE PRODUCTS</span>
+
+        <h2>
+            More products are available on WhatsApp.
+        </h2>
+
+        <p>
+            Contact us on WhatsApp and we will show you more products.
+        </p>
+
+    </div>
+
+    <a
+        id="whatsappBtn"
+        href="https://wa.me/2348127902939"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-btn"
+    >
+        View More Products
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</section>
+
+
+<!-- ==================================================
+     ABOUT
+================================================== -->
+
+<section id="about" class="section about">
+
+    <div class="section-heading">
+
+        <span>02 — ABOUT US</span>
+
+        <h2>
+            About <strong>M.S.I Prints Services</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <p>
+                Welcome to M.S.I Prints Services.
+                We provide "Printing That Speaks for You."
+            </p>
+
+            <p>
+                The products displayed on this website are samples.
+                For more available products, contact us through WhatsApp.
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div>
+                <strong>Quality</strong>
+                <p>High Quality products.</p>
+            </div>
+
+            <div>
+                <strong>Fashion</strong>
+                <p>Modern designs And Prints.</p>
+            </div>
+
+            <div>
+                <strong>WhatsApp</strong>
+                <p>Easy direct communication.</p>
+            </div>
+
+           <div class="address-box">
+    <i class="fa-solid fa-location-dot"></i>
+
+    <div>
+        <strong>Our Location</strong>
+
+        <p>NJ11 Arochukwu Road off Junction Road by Satdium Round-about, Kaduna, Nigeria</p>
+
+        <a
+              href="https://www.google.com/maps/search/?api=1&query=NJ+11+
+              Arochukwu+Road+Kaduna+Nigeria"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="directions-btn"
+               >
+             <i class="fa-solid fa-location-arrow"></i>
+              Get Directions
+          </a>
+        </div>
+    </div>
+
+                
+
+            </div>
+<!--             
+            <div class="ceo-profile">
+    <div class="ceo-image-wrap">
+        <img src="IMG_20250506_190801.jpg"
+             alt="CEO of M.S.I PRINTS"
+             class="ceo-photo">
+    </div>
+
+    <div class="ceo-info">
+        <span>FOUNDER & CEO</span>
+        <h3>Sagir Mohammed</h3>
+        <p>
+            Building M.S.I PRINTS "From Concept to Print, We Make It Pop."
+            "Precision in Every Print."
+        </p>
+    </div>
+</div> -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CEO SECTION
+================================================== -->
+
+<section id="ceo" class="section ceo-section">
+
+    <div class="section-heading">
+
+        <span>03 — LEADERSHIP</span>
+
+        <h2>
+            Meet Our <strong>CEO</strong>
+        </h2>
+
+        <p>
+            The person behind M.S.I Printing Services.
+        </p>
+
+    </div>
+
+
+    <div class="ceo-container">
+
+        <div class="ceo-photo-area">
+
+            <div class="ceo-glow"></div>
+
+            <div class="ceo-photo-card">
+
+                <div class="ceo-photo-inner">
+
+                    <img
+                        src="IMG_2189.jpg"
+                        alt="CEO of M.S.I Printing Services"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="ceo-content">
+
+            <span class="ceo-label">
+                M.S.I Printing Services
+            </span>
+
+            <h2>
+                Sagir <span>Mohammed</span>
+            </h2>
+
+            <h3>
+                Chief Executive Officer
+            </h3>
+
+            <p>
+                Welcome to M.S.I Printing Services.
+                "Our goal at M.S.I Prints is to 
+                 bring our clients' ideas to life 
+                 with quality prints, fast service, 
+                 and pride in every detail — 
+                 so your brand stands out and shines."
+            </p>
+
+            <a
+                href="https://wa.me/2348127902939"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary-btn"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                Contact M.S.I
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section id="contact" class="section">
+
+    <div class="contact-box">
+
+        <div class="contact-content">
+
+            <span>04 — CONTACT</span>
+
+            <h2>
+                Want to see <strong>more?</strong>
+            </h2>
+
+            <p>
+                Contact us on WhatsApp to see more products.
+            </p>
+
+        </div>
+
+        <a
+            id="contactWhatsapp"
+            href="https://wa.me/2348127902939"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn primary-btn"
+        >
+            Chat on WhatsApp
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <a href="#home" class="logo">
+                M.S.I <span>prints &amp; Packages</span>
+            </a>
+
+            <p>Sourvenirs • Packages • General Contractors</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-social">
+
+            <a
+                href="https://wa.me/2348127902939"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+                href="https://fb.come/|/6|p1KJRRR"
+                aria-label="Facebook"
+            >
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a
+                href="#"
+                aria-label="TikTok"
+            >
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span>
+            M.S.I Printing Services
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+    id="topBtn"
+    class="top-btn"
+    type="button"
+    aria-label="Back to top"
+>
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
