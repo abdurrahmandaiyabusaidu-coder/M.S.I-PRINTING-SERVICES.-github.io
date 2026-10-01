@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ==========================================
 
     const whatsappNumber =
-        "2347044030909";
+        "2348127902939";
 
 
     const whatsappButtons =
@@ -348,7 +348,7 @@ Thank you.`;
                         message =
                             `Hi M.S.I PRINTS 👋
 
-I'm interested in your Printing serices 
+I'm interested in your Printing Services 
 Please send me your available products and more details.
 
 Thank you.`;
@@ -690,87 +690,14 @@ productCards.forEach(function (card) {
 });
 
 
+
     // ==========================================
     // WEBSITE LOADED
     // ==========================================
 
     console.log(
-        "A.D.S Shoes & Bags Store loaded successfully."
+        "M.S.I PRINTING SERVICES loaded successfully."
     );
 
 });
 
-// ==========================================
-// SCREEN READER
-// ==========================================
-
-const screenReaderBtn =
-    document.getElementById("screenReaderBtn");
-
-const accessibilityPanel =
-    document.getElementById("accessibilityPanel");
-
-const readPageBtn =
-    document.getElementById("readPageBtn");
-
-const stopReadingBtn =
-    document.getElementById("stopReadingBtn");
-
-
-// Open / close accessibility panel
-
-if (screenReaderBtn && accessibilityPanel) {
-
-    screenReaderBtn.addEventListener("click", function () {
-
-        accessibilityPanel.classList.toggle("show");
-
-        const isOpen =
-            accessibilityPanel.classList.contains("show");
-
-        screenReaderBtn.setAttribute(
-            "aria-expanded",
-            isOpen
-        );
-    });
-}
-
-
-// Read page
-
-if (readPageBtn) {
-
-    readPageBtn.addEventListener("click", function () {
-
-        // Stop anything currently being read
-        window.speechSynthesis.cancel();
-
-        // Get page text
-        const pageText = document.body.innerText;
-
-        const speech =
-            new SpeechSynthesisUtterance(pageText);
-
-        speech.lang = "en-US";
-
-        speech.rate = 0.9;
-
-        speech.pitch = 1;
-
-        speech.volume = 1;
-
-        window.speechSynthesis.speak(speech);
-    });
-}
-
-
-// Stop reading
-
-if (stopReadingBtn) {
-
-    stopReadingBtn.addEventListener("click", function () {
-
-        window.speechSynthesis.cancel();
-
-    });
-}
